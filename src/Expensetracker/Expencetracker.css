@@ -1,0 +1,108 @@
+/* General Container */
+.container {
+    display: flex;
+    height: 100vh;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid black;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  /* Left Section - Transactions */
+  .transaction-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    border-right: 2px solid black;
+  }
+  
+  /* Input Section */
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    align-items: center;
+    margin-bottom: 0px;
+    border-bottom: 2px solid black;
+  }
+  
+  .input-section input {
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    width: 150px;
+    margin-bottom: 10px;
+    font-family: inherit;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+    font-family: inherit;
+    box-shadow: 2px 2px black;
+  }
+  .button{
+    display: flex;
+    flex-direction: row;
+  }
+  .in {
+    background-color: #b5e7a0;
+    color: black;
+  }
+  
+  .out {
+    background-color: #f5b7b1;
+    color: black;
+  }
+  .transaction-history {
+    margin-top: 10px;
+  }
+  
+  .transaction-history h4 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  
+  .transaction-history li {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+  }
+  
+  .balance-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .balance-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .pie {
+    width: 150px;
+    height: 150px;
+    background-color: #a3d5ff;
+    border: 2px solid black;
+    border-radius: 60%;
+    margin-bottom: 10px;
+  }
+  
