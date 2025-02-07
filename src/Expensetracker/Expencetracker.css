@@ -1,108 +1,165 @@
-/* General Container */
+/* General Styles */
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
 .container {
-    display: flex;
-    height: 100vh;
-    border-radius: 15px;
-    padding: 20px;
-    border: 2px solid black;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-  }
-  
-  /* Left Section - Transactions */
-  .transaction-section {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-right: 10px;
-    border-right: 2px solid black;
-  }
-  
-  /* Input Section */
-  .input-section {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    align-items: center;
-    margin-bottom: 0px;
-    border-bottom: 2px solid black;
-  }
-  
-  .input-section input {
-    border: 2px solid black;
-    padding: 10px;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 10px;
-    outline: none;
-    width: 150px;
-    margin-bottom: 10px;
-    font-family: inherit;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: 2px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 5px;
-    font-family: inherit;
-    box-shadow: 2px 2px black;
-  }
-  .button{
-    display: flex;
-    flex-direction: row;
-  }
-  .in {
-    background-color: #b5e7a0;
-    color: black;
-  }
-  
-  .out {
-    background-color: #f5b7b1;
-    color: black;
-  }
-  .transaction-history {
-    margin-top: 10px;
-  }
-  
-  .transaction-history h4 {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 25px;
-  }
-  
-  
-  .transaction-history li {
-    padding: 10px;
-    font-size: 16px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: 2px solid black;
-    text-align: center;
-  }
-  
-  .balance-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .balance-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .pie {
-    width: 150px;
-    height: 150px;
-    background-color: #a3d5ff;
-    border: 2px solid black;
-    border-radius: 60%;
-    margin-bottom: 10px;
-  }
-  
+  display: flex;
+  height: 90vh;
+  width: 80vw;
+  border-radius: 15px;
+  padding: 0px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Transaction Section */
+.transaction-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-right: 0px;
+  padding-left: 0px;
+  position: relative;
+}
+
+.input-section {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  padding-top:20px;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+}
+.inputbar{
+  padding-left:10px ;
+}
+.input-section input {
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  width: 200px;
+  margin-bottom: 51px;
+  font-family: inherit;
+}
+
+.button {
+  display: flex;
+  gap: 127px;
+  width: 250px;
+  border-radius: 20%;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+  box-shadow: 2px 2px black;
+}
+
+.in {
+  background-color: #b5e7a0;
+  color: black;
+}
+
+.out {
+  background-color: #f5b7b1;
+  color: black;
+}
+
+.transaction-history {
+  margin-top: 0px;
+  padding: 0;
+  list-style: none;
+}
+.transaction-history ul {
+  padding: 30px;
+  margin: 30px;
+  list-style: none;
+}
+
+.transaction-history li {
+  padding-right:30px;
+  font-size: 16px;
+  margin: 0px 0;
+  border-radius: 0px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.balance-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  text-align: center;
+  border-left:3px black solid; 
+}
+.transaction-list{
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 30px;
+  list-style: none; 
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.transaction-list.li.ammount {
+  background-color: #b5e7a0;
+  color: black;
+}
+.transaction-list.li.ammount{
+  background-color: #f5b7b1;
+  color: white;
+}
+.transaction-list li{
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 2px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 20px;
+}
+.balance-display {
+  display: flex;
+  flex-direction: column
+
+}
+.heading{
+  margin-top: 10px;
+}
+
+.pie {
+  width: 178px;
+  height: 180px;
+  background-color: #a3d5ff;
+  border: 2px solid black;
+  border-radius: 70%;
+  display: flex;
+  font-size: 90px;
+  font-weight: bold;
+}

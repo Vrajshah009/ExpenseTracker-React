@@ -26,35 +26,39 @@ function ExpenseTracker() {
         <div className="container">
             <div className="transaction-section">
                 <div className="input-section">
-                    <input
-                        type="number"
-                        placeholder="Enter amount"
-                        value={amount}
-                        onChange={(e) => setAmount(e.target.value)}
-                    />
-                    <div className="button">
-                    <button className="in" onClick={() => addTransaction(true)}>In</button>
-                    <button className="out" onClick={() => addTransaction(false)}>Out</button>
+                    <div className="inputbar">
+                        <input
+                            type="number"
+                            placeholder="amount"
+                            value={amount}
+                            onChange={(e) => setAmount(e.target.value)}
+                        />
                     </div>
+                        <div className="button">
+                            <button className="in" onClick={() => addTransaction(true)}>In</button>
+                            <button className="out" onClick={() => addTransaction(false)}>Out</button>
+                        </div>
                 </div>
                 <div cvlassName="transaction-history">
-                    <h4>Transaction History</h4>
-                    <ul>
+                    <ul >
+                        <div className="transaction-list">
                         {transactions_history.map((v) => (
                             <li key={v.id} className={v.isIncome ? "in" : "out"}>
-                                {v.isIncome ? "+" : "-"} rupess{v.amount}
+                                {v.amount}
                             </li>
                         ))}
+                        </div>
                     </ul>
                 </div>
             </div>
 
             <div className="balance-section">
-                {/* Balance Display */}
                 <div className="balance-display">
                     <div className="pie">
                     </div>
-                    <h4>Balance: rupess{balance}</h4>
+                 <div className="heading">
+                    <h4>${balance}</h4>
+                    </div>
                 </div>
             </div>
         </div>
