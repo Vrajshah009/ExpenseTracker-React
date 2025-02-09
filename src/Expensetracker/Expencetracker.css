@@ -163,3 +163,11 @@ button {
   font-size: 90px;
   font-weight: bold;
 }
+
+.transaction.in {
+  color: #288500;
+}
+
+.transaction.out {
+  color: #af1002;
+}

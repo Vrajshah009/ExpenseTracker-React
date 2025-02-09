@@ -43,7 +43,7 @@ function ExpenseTracker() {
                     <ul >
                         <div className="transaction-list">
                         {transactions_history.map((v) => (
-                            <li key={v.id} className={v.isIncome ? "in" : "out"}>
+                            <li key={v.id} className={`transaction ${v.isIncome ? "in" : "out"}`}>
                                 {v.amount}
                             </li>
                         ))}
